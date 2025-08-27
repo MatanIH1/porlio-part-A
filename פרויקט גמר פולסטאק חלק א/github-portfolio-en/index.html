@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio · GitHub</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">GitHub API PAGE</div>
+
+  <!-- Header -->
+  <header class="site-header container">
+    <div class="me">
+      <img src="assets/avatar-placeholder.svg" alt="Avatar" id="avatar" class="avatar">
+      <div>
+        <h1 id="name">Matan Hacohen</h1>
+        <p id="bio" class="muted">Short bio about me...</p>
+       <div class="links">
+  <a id="githubLink" href="https://github.com/MatanIH1" target="_blank" rel="noopener">GitHub</a>
+  <a id="linkedinLink" href="https://www.linkedin.com/in/matan-hacohen?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+  target="_blank" rel="noopener">LinkedIn</a>
+  <a id="emailLink" href="mailto:Matanhs13@outlook.com" target="_blank" rel="noopener">Email</a>
+</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <label class="username-label">
+        GitHub Username:
+        <input id="username" placeholder="e.g. torvalds" value="MatanIH1" />
+      </label>
+      <button id="loadBtn" class="btn">Load Projects</button>
+      <button id="themeToggle" class="btn btn-ghost" aria-label="Dark/Light">🌓</button>
+    </div>
+  </header>
+
+  <!-- About -->
+ <section class="container about">
+  <h2>About</h2>
+  <p>
+    I'm Matan, currently a software engineering student at Shenkar. I have served as an aerial mapping researcher in the Israeli Air Force Intelligence and worked in the past year in a GIS Company in Tel Aviv. 
+  </p>
+  <p>
+    I did an international project and now work at the Ministry of Labor as a GIS Analyst. Experience in teamwork with goals and deadlines.
+  </p>
+  <p>
+    <strong>Skills:</strong> 🌐 ARCGIS PRO/MAP/CATALOG/ONLINE 🌐 ERDAS, image processing. 🌐 Microsoft Office. 🌐 Visual Studio Code (HTML,CSS,JS). 🌐 Visual Studio 2022 (C#, C). 🌐 UI/UX (Figma). 🌐 Adobe Photoshop.
+  </p>
+</section>
+  <!-- Projects -->
+  <section class="container">
+    <div class="section-header">
+      <h2>My Projects</h2>
+      <div class="filters">
+        <input id="search" placeholder="Search by name/description..." />
+        <select id="langFilter">
+          <option value="">All languages</option>
+        </select>
+        <select id="sort">
+          <option value="pushed">Sort: Recently updated</option>
+          <option value="stars">Sort: Stars</option>
+          <option value="name">Sort: Name</option>
+        </select>
+      </div>
+    </div>
+    <div id="projects" class="grid"></div>
+    <div id="empty" class="empty muted" hidden>No repositories found…</div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a id="emailLink2">Matanhs13@outlook.com</a></li>
+      <li>LinkedIn: <a id="linkedinLink2" target="_blank" rel="noopener">matan-hacohen</a></li>
+      <li>GitHub: <a id="githubLink2" target="_blank" rel="noopener">MATANIH1</a></li>
+    </ul>
+  </section>
+
+  <footer class="container muted small">© All rights reserved · Matan Hacohen</footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
